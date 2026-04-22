@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
-   <title>Asimov Test</title>
+    <title>Asimov Test</title>
     <style>
       body { font-family: 'Space Grotesk', sans-serif; scroll-behavior: smooth; }
+      /* Estilos para animação do Menu Mobile */
+      #mobile-menu.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+      .menu-open span:nth-child(1) { transform: rotate(45deg) translateY(10px); }
+      .menu-open span:nth-child(2) { opacity: 0; }
+      .menu-open span:nth-child(3) { transform: rotate(-45deg) translateY(-10px); }
     </style>
   </head>
 
@@ -62,6 +67,98 @@
         <img class="h-8" src="assets/logo-hubspot.png" />
         <img class="h-8" src="assets/logo-netflix.png" />
         <img class="h-8" src="assets/logo-zoom.png" />
+    </section>
+
+    <section  class="max-w-6xl mx-auto px-6 mt-20 mb-16 flex flex-col md:flex-row items-center gap-8">
+      <h2 class="bg-[#B9FF66] text-black font-semibold px-2 py-1 text-3xl rounded-lg">Services</h2>
+      <p class="text-md max-w-lg text-center md:text-left">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online.</p>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 pb-20 grid grid-cols-1 md:grid-cols-2 gap-10 place-items-center">
+      
+      <div class="bg-[#F3F3F3] border border-black p-8 md:p-12 rounded-[45px] shadow-[0_5px_0_0_#000] flex justify-between items-center w-full max-w-[600px] min-h-[270px]">
+        <div class="flex flex-col justify-between h-full space-y-12">
+          <div>
+            <h3 class="bg-[#B9FF66] text-2xl font-bold px-1 rounded-md w-fit">Search engine</h3>
+            <h3 class="bg-[#B9FF66] text-2xl font-bold px-1 rounded-md w-fit">optimization</h3>
+          </div>
+          <div class="flex items-center gap-4 cursor-pointer group">
+            <img src="assets/Icon.png" class="w-10 h-10 group-hover:rotate-45 transition-transform" />
+            <a class="text-xl font-medium">Learn more</a>
+          </div>
+        </div>
+        <img src="assets/illustration-seo.png.png" class="w-28 md:w-36 object-contain ml-4" />
+      </div>
+
+      <div class="bg-[#B9FF66] border border-black p-8 md:p-12 rounded-[45px] shadow-[0_5px_0_0_#000] flex justify-between items-center w-full max-w-[600px] min-h-[270px]">
+        <div class="flex flex-col justify-between h-full space-y-12">
+          <div>
+            <h3 class="bg-white text-2xl font-bold px-1 rounded-md w-fit">Pay-per-click</h3>
+            <h3 class="bg-white text-2xl font-bold px-1 rounded-md w-fit">advertising</h3>
+          </div>
+          <div class="flex items-center gap-4 cursor-pointer group">
+            <img src="assets/Icon.png" class="w-10 h-10 group-hover:rotate-45 transition-transform" />
+            <a class="text-xl font-medium">Learn more</a>
+          </div>
+        </div>
+        <img src="assets/illustration-ppc.png.png" class="w-28 md:w-36 object-contain ml-4" />
+      </div>
+
+      <div class="bg-[#191A23] p-8 md:p-12 rounded-[45px] shadow-[0_5px_0_0_#191A23] flex justify-between items-center w-full max-w-[600px] min-h-[270px] text-white">
+        <div class="flex flex-col justify-between h-full space-y-12">
+          <div>
+            <h3 class="bg-white text-black text-2xl font-bold px-1 rounded-md w-fit">Social Media</h3>
+            <h3 class="bg-white text-black text-2xl font-bold px-1 rounded-md w-fit">Marketing</h3>
+          </div>
+          <div class="flex items-center gap-4 cursor-pointer group">
+            <img src="assets/Icon (1).png" class="w-10 h-10 group-hover:rotate-45 transition-transform" />
+            <a class="text-xl font-medium">Learn more</a>
+          </div>
+        </div>
+        <img src="assets/illustration-social-media.png.png" class="w-28 md:w-36 object-contain ml-4" />
+      </div>
+
+      <div class="bg-[#F3F3F3] border border-black p-8 md:p-12 rounded-[45px] shadow-[0_5px_0_0_#000] flex justify-between items-center w-full max-w-[600px] min-h-[270px]">
+        <div class="flex flex-col justify-between h-full space-y-12">
+          <div>
+            <h3 class="bg-[#B9FF66] text-2xl font-bold px-1 rounded-md w-fit">Email</h3>
+            <h3 class="bg-[#B9FF66] text-2xl font-bold px-1 rounded-md w-fit">Marketing</h3>
+          </div>
+          <div class="flex items-center gap-4 cursor-pointer group">
+            <img src="assets/Icon.png" class="w-10 h-10 group-hover:rotate-45 transition-transform" />
+            <a class="text-xl font-medium">Learn more</a>
+          </div>
+        </div>
+        <img src="assets/illustration-email-marketing.png" class="w-28 md:w-36 object-contain ml-4" />
+      </div>
+
+      <div class="bg-[#B9FF66] border border-black p-8 md:p-12 rounded-[45px] shadow-[0_5px_0_0_#000] flex justify-between items-center w-full max-w-[600px] min-h-[270px]">
+        <div class="flex flex-col justify-between h-full space-y-12">
+          <div>
+            <h3 class="bg-white text-2xl font-bold px-1 rounded-md w-fit">Content</h3>
+            <h3 class="bg-white text-2xl font-bold px-1 rounded-md w-fit">Creation</h3>
+          </div>
+          <div class="flex items-center gap-4 cursor-pointer group">
+            <img src="assets/Icon.png" class="w-10 h-10 group-hover:rotate-45 transition-transform" />
+            <a class="text-xl font-medium">Learn more</a>
+          </div>
+        </div>
+        <img src="assets/illustration-content-creation.png" class="w-28 md:w-36 object-contain ml-4" />
+      </div>
+
+      <div class="bg-[#191A23] p-8 md:p-12 rounded-[45px] shadow-[0_5px_0_0_#191A23] flex justify-between items-center w-full max-w-[600px] min-h-[270px] text-white">
+        <div class="flex flex-col justify-between h-full space-y-12">
+          <div>
+            <h3 class="bg-[#B9FF66] text-black text-2xl font-bold px-1 rounded-md w-fit">Analytics and</h3>
+            <h3 class="bg-[#B9FF66] text-black text-2xl font-bold px-1 rounded-md w-fit">Tracking</h3>
+          </div>
+          <div class="flex items-center gap-4 cursor-pointer group">
+            <img src="assets/Icon (1).png" class="w-10 h-10 group-hover:rotate-45 transition-transform" />
+            <a class="text-xl font-medium">Learn more</a>
+          </div>
+        </div>
+        <img src="assets/illustration-analytics.png.png" class="w-28 md:w-36 object-contain ml-4" />
+      </div>
     </section>
 
   </body>
