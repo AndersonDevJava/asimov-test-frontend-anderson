@@ -227,4 +227,26 @@
       </div>
     </section>
   </body>
+
+  <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileLinks = document.querySelectorAll('.mobile-link');
+
+      function toggleMenu() {
+        mobileMenu.classList.toggle('open');
+        menuBtn.classList.toggle('menu-open');
+        // Impede scroll do body quando menu está aberto
+        document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : 'auto';
+      }
+
+      menuBtn.addEventListener('click', toggleMenu);
+
+      // Close menu when clicking a link
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (mobileMenu.classList.contains('open')) toggleMenu();
+        });
+      });
+    </script>
 </html>
