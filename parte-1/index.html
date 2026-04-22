@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+   <title>Asimov Test</title>
+    <style>
+      body { font-family: 'Space Grotesk', sans-serif; scroll-behavior: smooth; }
+    </style>
+  </head>
+
+  <body class="bg-white text-black antialiased">
+    <header class="w-full py-6">
+      <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+        <img class="w-32 md:w-40" src="./assets/logo-positivus.png" alt="Logo" />
+        <nav class="hidden lg:flex items-center gap-10">
+          <ul class="flex gap-8 text-lg">
+            <li>About us</li><li>Services</li><li>Use Cases</li><li>Pricing</li><li>Blog</li>
+          </ul>
+          <button class="border border-black px-7 py-3 rounded-xl hover:bg-black hover:text-white transition-all font-medium">Request a quote</button>
+        </nav>
+        <button class="lg:hidden flex flex-col gap-1.5 z-50 focus:outline-none">
+          <span class="w-8 h-1 bg-black rounded-full transition-all duration-300"></span>
+          <span class="w-8 h-1 bg-black rounded-full transition-all duration-300"></span>
+          <span class="w-8 h-1 bg-black rounded-full transition-all duration-300"></span>
+        </button>
+      </div>
+
+    </header>
+
+    <section class="max-w-6xl mx-auto px-6 py-10 md:py-16 flex flex-col md:flex-row items-center justify-between gap-10">
+      <div class="max-w-xl text-left">
+        <h1 class="text-[40px] md:text-[60px] font-medium leading-[1.1] mb-6">
+          Navigating the <br />
+          digital landscape <br />
+          for success
+        </h1>
+
+        <p class="text-lg md:text-xl leading-relaxed mb-8 max-w-lg">
+          Our digital marketing agency helps businesses <br class="hidden md:block" />
+          grow and succeed online through a range of <br class="hidden md:block" />
+          services including SEO, PPC, social media marketing, <br class="hidden md:block" />
+          and content creation.
+        </p>
+
+        <button class="bg-[#191A23] text-white px-8 py-4 rounded-xl text-xl w-full md:w-auto hover:bg-black transition-colors">
+          Book a consultation
+        </button>
+      </div>
+
+      <div class="w-full md:w-1/2 flex justify-center">
+        <img src="assets/Illustration principal.png" alt="Hero" class="w-full max-w-md" />
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 py-10 flex flex-wrap justify-center md:justify-between items-center gap-8 grayscale -mt-8">
+        <img class="h-8" src="assets/logo-amazon.png" />
+        <img class="h-8" src="assets/logo-dribbble.png" />
+        <img class="h-8" src="assets/logo-notion.png" />
+        <img class="h-8" src="assets/logo-hubspot.png" />
+        <img class="h-8" src="assets/logo-netflix.png" />
+        <img class="h-8" src="assets/logo-zoom.png" />
+    </section>
+
+  </body>
+</html>
