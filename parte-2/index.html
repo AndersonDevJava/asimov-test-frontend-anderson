@@ -20,39 +20,49 @@
         <div class="flex w-[90%] justify-between items-center mt-2">
           <!-- Ícone -->
           <div class="flex items-center gap-3">
-            <div class="duration-[2000ms]">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo" class="w-7 h-7"/>
-            </div>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-7 h-7"/>
           </div>
 
           <!-- Menu -->
-          <div>
-            <ul class="flex gap-20 text-white/80">
+          <nav class="hidden md:block">
+            <ul class="flex gap-10 text-white/80">
               <li class="hover:text-white transition">Sobre</li>
               <li class="hover:text-white transition">Serviço</li>
               <li class="hover:text-white transition">Contato</li>
             </ul>
-          </div>
+          </nav>
 
-          <!-- Ações -->
-          <div class="flex gap-10 items-center">
-            <ul class="flex gap-6 text-white/80">
-              <li class="hover:text-white transition">Log in</li>
-            </ul>
+          <!-- ações desktop -->
+          <div class="hidden md:flex gap-6 items-center">
+            <span class="text-white/80 hover:text-white cursor-pointer"
+              >Log in</span
+            >
 
-            <button class="relative overflow-hidden bg-gradient-to-b from-gray-800 to-black text-white px-8 py-3 rounded-xl border border-white/20 transition-all duration-300 hover:scale-105 hover:border-blue-500/50 shadow-[0_10px_20px_rgba(0,0,0,0.4)] group">
-              <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent"></div>
-              <div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
-
-              <span class="relative z-10 font-bold tracking-wider uppercase text-xs flex items-center gap-2">
-                Quero começar agora
-              </span>
+            <button class="bg-gradient-to-b from-gray-800 to-black text-white px-6 py-2 rounded-xl border border-white/20 hover:border-blue-500/50 transition">
+              Quero começar
             </button>
           </div>
+
+          <!-- botão mobile -->
+          <button id="menu-btn" class="md:hidden text-white text-2xl">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- menu mobile -->
+        <div id="menu-mobile" class="hidden absolute top-16 left-0 w-full bg-black/95 backdrop-blur-md border-t border-white/10 md:hidden">
+          <ul class="flex flex-col items-center gap-6 py-6 text-white/80">
+            <li class="hover:text-white transition">Sobre</li>
+            <li class="hover:text-white transition">Serviço</li>
+            <li class="hover:text-white transition">Contato</li>
+
+            <li class="border-t border-white/10 pt-4 w-full text-center">
+              Log in
+            </li>
+          </ul>
         </div>
       </header>
 
-      <!-- HERO CONTAINER -->
       <div class="min-h-[75vh] flex justify-center items-center mt-14 px-4">
         <div class="flex flex-col md:flex-row justify-between items-center max-w-7xl w-full gap-10">
           <!-- HERO TEXTO -->
@@ -119,4 +129,14 @@
       </div>
     </section>
   </body>
+
+  <script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu-mobile');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
 </html>
