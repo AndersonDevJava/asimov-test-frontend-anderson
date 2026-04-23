@@ -6,6 +6,55 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>LeadPage Concersao</title>
 </head>
-<body>
-</body>
+  <body class="bg-black">
+
+    <section class="relative w-full min-h-screen overflow-hidden">
+      <!-- IMAGEM DE FUNDO -->
+      <img src="assets/imagem-de-fundo.png" alt="" class="absolute inset-0 w-full h-full object-cover -z-10"/>
+
+      <!-- OVERLAY OPCIONAL (melhora leitura) -->
+      <div class="absolute inset-0 bg-black/60 -z-10"></div>
+
+      <header class="h-16 flex justify-center items-center relative z-10">
+        <div class="flex w-[90%] justify-between items-center">
+          <!-- Ícone -->
+          <div class="flex items-center gap-3">
+            <div class="animate-bounce duration-[2000ms]">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo" class="w-7 h-7"/>
+            </div>
+          </div>
+
+          <!-- Menu -->
+          <div>
+            <ul class="flex gap-20 text-white/80">
+              <li class="hover:text-white transition">Sobre</li>
+              <li class="hover:text-white transition">Serviço</li>
+              <li class="hover:text-white transition">Contato</li>
+            </ul>
+          </div>
+
+          <!-- Ações -->
+          <div class="flex gap-10 items-center">
+            <ul class="flex gap-6 text-white/80">
+              <li class="hover:text-white transition">Log in</li>
+            </ul>
+
+            <button class="relative overflow-hidden bg-gradient-to-b from-gray-800 to-black text-white px-8 py-3 rounded-xl border border-white/20 transition-all duration-300 hover:scale-105 hover:border-blue-500/50 shadow-[0_10px_20px_rgba(0,0,0,0.4)] group">
+              <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent"></div>
+              <div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+
+              <span class="relative z-10 font-bold tracking-wider uppercase text-xs flex items-center gap-2">
+                Começar agora
+              </span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div>
+        ''
+      </div>
+    </section>
+
+  </body>
 </html>
