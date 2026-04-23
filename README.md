@@ -1,10 +1,10 @@
-- Neste projeto, busquei equilibrar a eficiência da inteligência artificial com o rigor técnico do desenvolvimento manual para atingir a máxima fidelidade ao design proposto.
+Neste projeto, busquei equilibrar o uso de inteligência artificial com o desenvolvimento manual para alcançar alta fidelidade ao design e boas práticas de código.
 
-⚪Quais ferramentas de IA você usou?
-Utilizei o Gemini 1.5 Flash para suporte técnico e o ChatGPT para consultas rápidas.
+⚪ Quais ferramentas de IA você usou?
+Utilizei o Gemini 1.5 Flash para suporte técnico e o ChatGPT para consultas rápidas e refinamento de código.
 
-⚪Em que etapas a IA ajudou mais?
-A IA foi essencial na etapa de polimento, ajudando na implementação da lógica do menu mobile (JavaScript), ajustes finos de alinhamento vertical e aceleração da responsividade com Tailwind.
+⚪ Em que etapas a IA ajudou mais?
+A IA foi mais útil na fase de polimento, auxiliando em ajustes de responsividade com Tailwind, melhorias de alinhamento e sugestões de microinterações.
 
-⚪O que você ajustou manualmente e por quê?
-Desenvolvi manualmente toda a estrutura semântica do HTML para garantir uma base sólida. Ajustei rigorosamente espaçamentos, caminhos de assets e nomes de classes para manter a fidelidade ao Figma e aplicar boas práticas de organização e performance que ferramentas automatizadas podem ignorar.
+⚪ O que você ajustou manualmente e por quê?
+Desenvolvi manualmente toda a estrutura HTML semântica para garantir organização, clareza e performance. Também refinei espaçamentos, tipografia e uso de classes para manter fidelidade ao design e evitar dependência excessiva de soluções automatizadas.
